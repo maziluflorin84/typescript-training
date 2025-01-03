@@ -8,25 +8,31 @@ class Customer {
     }
     
     
-    public get firstName() : string {
+    get firstName() : string {
         return this._firstName;
     }
     
-    public set firstName(value : string) {
+    set firstName(value : string) {
         this._firstName = value;
     }
     
-    public get lastName(): string {
+    get lastName(): string {
         return this._lastName;
     }
 
-    public set lastName(value: string) {
+    set lastName(value: string) {
         this._lastName = value;
     }
 }
 
 // let's create an instance
 let myCustomer = new Customer("Florin", "Mazilu");
+
+console.log(myCustomer.firstName);
+console.log(myCustomer.lastName);
+
+myCustomer.firstName = "Miruna";
+myCustomer.lastName = "Mazilu";
 
 console.log(myCustomer.firstName);
 console.log(myCustomer.lastName);
