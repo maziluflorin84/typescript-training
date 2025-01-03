@@ -1,6 +1,9 @@
 export class Customer {
 
-    constructor(private _firstName: string, private _lastName: string) {}
+    constructor(private _firstName: string, private _lastName: string) {
+        console.log("-- Customer constructor in Customer.ts --");
+        console.log("Some code");
+    }
     
     public get firstName() : string {
         return this._firstName;

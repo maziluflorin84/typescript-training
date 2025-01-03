@@ -22,5 +22,14 @@ class Customer {
 // let's create an instance
 let myCustomer = new Customer("Florin", "Mazilu");
 
+console.log(`First values`);
+console.log(`First Name: ${myCustomer.firstName}`);
+console.log(`Last Name: ${myCustomer.lastName}`);
+
+myCustomer.firstName = "Miruna";
+myCustomer.lastName = "Mazilu";
+
+console.log(`---------------------------------`);
+console.log(`New values`);
 console.log(`First Name: ${myCustomer.firstName}`);
 console.log(`Last Name: ${myCustomer.lastName}`);
